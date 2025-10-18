@@ -44,13 +44,7 @@ function Features() {
             <div>
               <AnimatedListDemo></AnimatedListDemo>
             </div>
-            : <Image
-            src={feature.image}
-            alt={feature.title}
-            width={150}
-            height={150}
-            className="w-full h-full object-cover"
-        />  }
+            : <></> }
             {
                   }
                   
