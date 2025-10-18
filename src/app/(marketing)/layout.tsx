@@ -1,0 +1,21 @@
+import Navbar from '@/components/marketing/navbar'
+import React from 'react'
+
+interface Props {
+    children: React.ReactNode
+}
+
+function MarketingLayout({children}:Props) {
+  return (
+    <>
+    <Navbar/>
+    <main className="mx-auto w-full z-40 relative">
+        {children}
+    </main >
+    </>
+  )
+}
+
+
+
+export default MarketingLayout
