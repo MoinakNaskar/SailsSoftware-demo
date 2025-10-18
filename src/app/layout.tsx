@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Ganify - AI Intelligence Solutions",
+  title: "SailsSoftware",
   description: "Unlock the future with cutting-edge AI solutions that help businesses work smarter, move faster, and grow stronger.",
 };
 
