@@ -27,8 +27,8 @@ function Features() {
 {FEATURES.map((feature, index) => (
     <Container key={feature.title} delay={0.1 + index * 0.1} className={cn(
         "relative flex flex-col rounded-2xl lg:rounded-3xl bg-card border border-border/50 hover:border-border/100 transition-colors",
-        index === 3 && " lg:col-span-2 ",
-        index === 2 && "md:col-span-2 lg:col-span-1",
+      
+        
     )}>
         <MagicCard
             gradientFrom="#fff"
@@ -37,17 +37,29 @@ function Features() {
             gradientColor="rgba(196,234,0,0.1)"
         >
             
-
-            <div className="mt-6 max-w-full bg-card/50 overflow-hidden">
-            {index==2? 
-            <AnimatedBeamDemo/>: index==3 ?<></>: index==4?
+            <div className="mt-6 max-w-full  bg-card/50 overflow-hidden">
+            {
+              feature.image? index==3?<Image
+              src={feature.image}
+              alt={feature.title}
+              width={250}
+              height={50}
+              className="w-full h-half object-cover"
+          />:<Image
+              src={feature.image}
+              alt={feature.title}
+              width={500}
+              height={500}
+              className="w-full h-full object-cover"
+          />:
+            index==2? 
             <div>
               <AnimatedListDemo></AnimatedListDemo>
-            </div>
+            </div>: index==1?
+            <AnimatedBeamDemo/>
+            
             : <></> }
-            {
-                  }
-                  
+         
             </div>
             <div className="flex items-center space-x-4 mt-4">
                 <h3 className="text-xl font-semibold flex items-center gap-2">

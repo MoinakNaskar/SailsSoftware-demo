@@ -108,8 +108,9 @@ export default function Testimonials() {
       </Marquee>
       </Container>
       <ScrollVelocityContainer className="text-4xl font-bold md:text-7xl">
-  <ScrollVelocityRow baseVelocity={20} direction={1}>
-    {" "}Developed By Wonder Creative Studio  {" "}
+  <ScrollVelocityRow baseVelocity={20} direction={1} className="justify-between">
+    <p className="px-2">{" "}Developed By Wonder Creative Studio  {" "}</p>
+    <p>{" "}Developedd By Wonder Creative Studio  {" "}</p>
   </ScrollVelocityRow>
   <ScrollVelocityRow baseVelocity={20} direction={-1}>
   {" "}Developed By Wonder Creative Studio {" "}

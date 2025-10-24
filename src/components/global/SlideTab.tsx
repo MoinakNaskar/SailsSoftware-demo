@@ -5,7 +5,7 @@ import { ShineBorder } from "../ui/shine-border";
 
 export const SlideTabsExample = () => {
   return (
-    <div className=" py-20">
+    <div className=" hidden lg:flex py-20">
       <SlideTabs />
     </div>
   );

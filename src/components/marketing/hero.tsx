@@ -10,11 +10,16 @@ import { Cursor } from "../ui/cursor";
 import Features from "./features";
 import { InteractiveHoverButton } from "../ui/interactive-hover-button";
 import { AnimatedGradientText } from "../ui/animated-gradient-text";
+import { ScrollVelocityContainer, ScrollVelocityRow } from "../ui/scroll-based-velocity";
+import Slider from 'react-infinite-logo-slider'
+import { SmoothCursor } from "../ui/smooth-cursor";
+import { ShineBorder } from "../ui/shine-border";
 const Hero = () => {
     return (
         <div
         className="bg-[url('/hero-bg.png')] bg- bg-center bg-no-repeat 
-            w-full mx-auto lg:max-w-screen lg:mx-auto px-4 md:px-12 py-10 relative">
+            w-full mx-auto lg:max-w-screen lg:mx-auto px-4 md:px-12 py-10 relative ">
+      
         <div className="relative flex flex-col items-center justify-center w-full py-10">
             <div className="absolute flex lg:hidden size-40 rounded-full bg-white blur-[10rem] top-0 left-1/2 -translate-x-1/2 -z-10"></div>
 
@@ -77,6 +82,7 @@ const Hero = () => {
                         </video>
                     </Cursor>
                         <button className="group relative grid overflow-hidden rounded-full px-2 py-1 shadow-[0_1000px_0_0_hsl(0_0%_15%)_inset] transition-colors duration-200 mx-auto">
+                        <ShineBorder shineColor={[ "#2d66ff", "#9a81fe"]} />
                             <span>
                                 <span className="spark mask-gradient absolute inset-0 h-[100%] w-[100%] animate-flip overflow-hidden rounded-full [mask:linear-gradient(white,_transparent_50%)] before:absolute before:aspect-square before:w-[200%] before:rotate-[-90deg] before:animate-rotate before:bg-[conic-gradient(from_0deg,transparent_0_340deg,white_360deg)] before:content-[''] before:[inset:0_auto_auto_50%] before:[translate:-50%_-15%]" />
                             </span>
@@ -90,11 +96,11 @@ const Hero = () => {
                         </button>
                     </Container>
                     <Container delay={0.15}>
-                        <h1 className="text-4xl md:text-4xl lg:text-6xl font-bold text-center !leading-tight max-w-4xl mx-auto   ">
+                        <h1 className="text-4xl md:text-4xl lg:text-6xl font-bold text-center !leading-tight max-w-4xl mx-auto my-0   ">
                         {/* Smart, Scalable & Sales-Driven – Digital Solutions That Work! */}
                            Smart, Scalable & Sales-Driven {" "}
                            </h1>
-                           <br/>
+                           
                            <AnimatedGradientText colorFrom="#fff"
                            colorTo="#2d66ff"
                            className="text-4xl md:text-4xl lg:text-6xl font-bold text-center !leading-tight max-w-3xl mx-auto ">
@@ -125,14 +131,50 @@ const Hero = () => {
                     </Container>
                     <Container delay={0.3} className="relative items-center justify-center">
                     <p className="text-gray-400 text-sm mb-8 text-ce">Trusted by 500+ companies worldwide</p>
-                    <div className="flex items-center justify-center space-x-8 md:space-x-12 opacity-60">
-                        <div className="text-white font-bold text-lg">attracts</div>
-                        <div className="text-white font-bold text-lg">verse</div>
-                        <div className="text-white font-bold text-lg">exon</div>
-                        <div className="text-white font-bold text-lg">celio</div>
-                        <div className="text-white font-bold text-lg">Holob</div>
-                        
-                    </div>
+                    <div className="flex items-center justify-center space-x-8 md:space-x-12 opacity-60 mx-20  mt-15">
+                    <Slider
+            width="150px"
+            duration={20}
+            pauseOnHover={true}
+            blurBorders={false}
+            blurBorderColor={'#fff'}
+
+            
+        >
+            <Slider.Slide >
+            <div className="text-white font-bold text-lg ">attracts</div>
+            </Slider.Slide>
+            <Slider.Slide>
+            <div className="text-white font-bold text-lg ">verse</div>
+            </Slider.Slide>
+            <Slider.Slide>
+            <div className="text-white font-bold text-lg ">exon</div>
+            </Slider.Slide>
+            <Slider.Slide>
+            <div className="text-white font-bold text-lg ">celio</div>
+            </Slider.Slide>
+            <Slider.Slide>
+            <div className="text-white font-bold text-lg ">Holob</div>
+            </Slider.Slide>
+            <Slider.Slide >
+            <div className="text-white font-bold text-lg ">attracts</div>
+            </Slider.Slide>
+            <Slider.Slide>
+            <div className="text-white font-bold text-lg ">verse</div>
+            </Slider.Slide>
+            <Slider.Slide>
+            <div className="text-white font-bold text-lg ">exon</div>
+            </Slider.Slide>
+            <Slider.Slide>
+            <div className="text-white font-bold text-lg ">celio</div>
+            </Slider.Slide>
+            <Slider.Slide>
+            <div className="text-white font-bold text-lg ">Holob</div>
+            </Slider.Slide>
+        </Slider>
+        </div>
+                    
+                   
                     </Container>
                     
 
